@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .timeline {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .timeline li {
+            list-style-type: none;
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .timeline li:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -2px;
+            height: 100%;
+            width: 4px;
+            background-color: #ddd;
+        }
+        .timeline li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        .timeline li span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .circel{
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            border: 3px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="timeline">
+    <li>
+        <span class="circel" style="margin-left: 145px;"></span>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </li>
+    <li>
+        <span>2012</span>
+        <p>Consectetur adipiscing elit.</p>
+    </li>
+    <li>
+        <span>2015</span>
+        <p>Integer nec odio.</p>
+    </li>
+</ul>
+
+</body>
+</html>
